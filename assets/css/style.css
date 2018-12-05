@@ -1,0 +1,38 @@
+body{
+    background-image: url("../images/leavesbg.jpg")
+}
+
+#start-box {
+    display:block;
+    overflow: auto;
+    height:400px;
+    background-color: lightgreen;
+   
+}
+
+#title-text {
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 100px;
+}
+
+#start-button{
+    margin:20px;
+}
+
+#quiz-box {
+    display:block;
+    overflow: auto;
+    height:auto;
+    background-color: lightgreen;
+    font-family: 'Gamja Flower'
+   
+}
+
+#end-box {
+    display:block;
+    overflow: auto;
+    height:400px;
+    background-color: lightgreen;
+    font-family: 'Gamja Flower'
+   
+}

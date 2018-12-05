@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Triva Game</title>
+
+    <!--stylesheet links for reset, custom style, bootstrap, and google fonts-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Gamja+Flower" rel="stylesheet">
+
+    <!--javascript links for jquery and custom js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--start box-->
+            <div class= "col-md-12 text-center" id="start-box">
+                <h1 id="title-text"> Totally Trivial Trivia!</h1>
+                <button type="button" class="btn btn-success btn-lg" id="start-button">Start!</button>
+            </div>
+        </div>
+
+            <!--Quiz Box-->
+        <div class="row">
+            <div class="col-md-12 text-center" id="quiz-box">
+
+                <div class ="row">
+                    <h2>True or False Quiz!</h2>
+                </div>
+
+                <div class="row" id="timer"></div>
+
+                <div class="row" id="Q1">
+                    <h2>This Answer is True</h2>
+                    <label> True <input type="radio" name="Ques1" value="true" /> </label> 
+                    <label> False <input type="radio" name="Ques1" value="false"/></label>
+                </div>
+
+                <div class="row" id="Q2">
+                        <h2>This Answer is True</h2>
+                        <label> True <input type="radio" name="Ques2" value="true" /> </label> 
+                        <label> False <input type="radio" name="Ques2" value="false"/></label>
+                </div>      
+
+                <div class="row" id="Q3">
+                        <h2>This Answer is True</h2>
+                        <label> True <input type="radio" name="Ques3" value="true" /> </label> 
+                        <label> False <input type="radio" name="Ques3" value="false"/></label>
+                </div> 
+                
+                <div class="row" id="Q4">
+                    <h2>This Answer is True</h2>
+                    <label> True <input type="radio" name="Ques4" value="true" /> </label> 
+                    <label> False <input type="radio" name="Ques4" value="false"/></label>
+                </div>  
+
+                <div class="row" id="Q5">
+                    <h2>This Answer is True</h2>
+                    <label> True <input type="radio" name="Ques5" value="true" /> </label> 
+                    <label> False <input type="radio" name="Ques5" value="false"/></label>
+                </div>  
+            
+            <button type="button" class="btn btn-success btn-lg" id="sub-button">Submit!</button>
+
+            </div>
+        </div>
+
+            <!--End Box-->
+            <div class = "col-md-12 text-center" id="end-box">
+                <h1 id="title-text"> Times Up!</h1>
+                <button type="button" class="btn btn-success btn-lg" id="reset-button">Reset</button>
+                <h2 id = "totalCorrect"></h2>
+                <h2 id = "totalIncorrect"></h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
