@@ -19,12 +19,17 @@ body{
     margin:20px;
 }
 
+#sub-button{
+    margin:20px;
+}
+
 #quiz-box {
-    display:block;
     overflow: auto;
     height:auto;
     background-color: lightgreen;
-    font-family: 'Gamja Flower'
+    font-family: 'Gamja Flower';
+    text-align: center;
+    float:center;
    
 }
 
@@ -35,4 +40,8 @@ body{
     background-color: lightgreen;
     font-family: 'Gamja Flower'
    
+}
+
+.quiz-text{
+    text-align: center;
 }
