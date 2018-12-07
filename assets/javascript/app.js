@@ -3,10 +3,10 @@ $(document).ready(function(){
 var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
-var number = 21;
+var number = 20;
 var timerInt;
 
-//gamestart function resets to the default state, is run once at the beginning and then on reset
+//gamestart function resets to the default state, is run once at the beginning and then on reset button 
 var gameStart = function(){
     //correct and incorrect values/timer reset
     correct=0;
@@ -14,7 +14,7 @@ var gameStart = function(){
     unanswered=0;
     number = 21;
 
-    //clears the timer interval and empties the html div
+    //clears the timer interval and empties the #timer html div
     clearInterval(timerInt);
     $("#timer").empty();
 
@@ -40,28 +40,31 @@ var gameStart = function(){
     $("#Ques5False").prop('checked', false);
 }
 
-//show the quiz page and starts the timer on start button click
+//shows the quiz page and starts the timer on start button click
 $("#start-button").on("click", function(){
     $("#start-box").hide();
     $("#quiz-box").show();
     run();
 })
 
-//display the questions
-$("#timerText").text("Time Remaining: ");//rewrites the number in the #quiz-box element.
+//display the timer as soon as the page loads, rather than one second later
+$("#timerText").text("Time Remaining: " + number);
 
 
-//display interval timer at the top of quiz page
+//function that sets the logic of the moving interval (timer)
 function run() {
     clearInterval(timerInt);
     timerInt = setInterval(decrease, 1000);
   }
  
-  function decrease() {  //function that is run in the setInterval function
+//function that is run in the setInterval function
+  function decrease() {  
     
     number--; //  Decreases number by one.
     
-    $("#timerText").text("Time Remaining: " + number);//rewrites the number in the #quiz-box element.
+    //rewrites the number in the #quiz-box element.
+    //I did number minus one so that it displays properly in relation to line 51
+    $("#timerText").text("Time Remaining: " + (number - 1));
 
     if (number === 0) { //  Once number hits zero...
 
@@ -73,10 +76,11 @@ function run() {
 
 //submit button 
 $("#sub-button").on("click", function(){
+    //moves the app to the next page
     $("#quiz-box").hide();
     $("#end-box").show();
 
-    //Button Checks
+    //Button Checks for the correct radio input, as well as a check if neither option is checked
     //Question 1
     if($('#Ques1True').is(':checked')) { correct++}
     else if ($('#Ques1False').is(':checked')) { incorrect++}
@@ -119,7 +123,6 @@ $("#reset-button").on("click", function(){
     gameStart();
 })
 
-console.log($("#Ques1True").checked)
 gameStart();
     
 });//end of document ready

@@ -26,51 +26,54 @@
         </div>
 
             <!--Quiz Box-->
-        <div class="row text-center" id="quiz-box">
-            <div class="col-md-12">
+        <div class="col-md-12 text-center" id="quiz-box">
 
                 <div class ="row">
-                    <h2 class="quiz-text">True or False Quiz!</h2>
+                    <div class="col-md-12">
+                    <h1 class="quiz-text">True or False Quiz!</h1>
+                    </div>
                 </div>
 
                 <div class="row" id="timerBox">
-                    <h2 id="timerText"></h2>
+                    <div class="col-md-12">
+                    <h1 id="timerText"></h1>
+                    </div>
                 </div>
 
                 <div class="row" id="Q1">
-                    <h2>This Answer is True</h2>
-                    <label> True <input type="radio" name="Ques1" id="Ques1True" value="true" /> </label> 
-                    <label> False <input type="radio" name="Ques1" id= "Ques1False" value="false"/></label>
+                        <h2>The State Bird of NJ is the Gold Finch</h2>
+                        <label> True <input type="radio" name="Ques1" id="Ques1True" value="true" /> </label> 
+                        <label> False <input type="radio" name="Ques1" id= "Ques1False" value="false"/></label>
                 </div>
 
                 <div class="row" id="Q2">
-                        <h2>This Answer is False</h2>
+                        <h2>Hoboken is NJ's most Populated City</h2>
                         <label> True <input type="radio" name="Ques2" id="Ques2True" value="true" /> </label> 
                         <label> False <input type="radio" name="Ques2" id="Ques2False" value="false"/></label>
                 </div>      
 
                 <div class="row" id="Q3">
-                        <h2>This Answer is True</h2>
+                        <h2>NJ's First Governor was William Livingston</h2>
                         <label> True <input type="radio" name="Ques3" id="Ques3True" value="true" /> </label> 
                         <label> False <input type="radio" name="Ques3" id="Ques3False" value="false"/></label>
                 </div> 
                 
                 <div class="row" id="Q4">
-                    <h2>This Answer is False</h2>
+                    <h2>Danny Devito was Born in 1945</h2>
                     <label> True <input type="radio" name="Ques4" id="Ques4True" value="true" /> </label> 
                     <label> False <input type="radio" name="Ques4" id="Ques4False" value="false"/></label>
                 </div>  
 
                 <div class="row" id="Q5">
-                    <h2>This Answer is True</h2>
+                    <h2>Hunterdon County is NJ's Wealthiest County</h2>
                     <label> True <input type="radio" name="Ques5" id="Ques5True" value="true" /> </label> 
                     <label> False <input type="radio" name="Ques5" id="Ques5False" value="false"/></label>
                 </div>  
             
             <button type="button" class="btn btn-success btn-lg" id="sub-button">Submit!</button>
 
-            </div>
         </div>
+        
 
             <!--End Box-->
             <div class = "col-md-12 text-center" id="end-box">
@@ -82,6 +85,10 @@
             </div>
         </div>
     </div>
+
+    <!--If I had more time I would have figured out how to properly use arrays to do this assignmnet
+    rather than just hard coding ids onto everything. Also I would have attempted to figure out how to 
+    center the radio inputs-->
 
 </body>
 </html>

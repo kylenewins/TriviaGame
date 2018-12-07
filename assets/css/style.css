@@ -1,5 +1,6 @@
 body{
-    background-image: url("../images/leavesbg.jpg")
+    background-image: url("../images/leavesbg.jpg");
+    background-repeat: repeat;
 }
 
 #start-box {
@@ -44,4 +45,8 @@ body{
 
 .quiz-text{
     text-align: center;
+}
+
+#timerText{
+    color:red;
 }
